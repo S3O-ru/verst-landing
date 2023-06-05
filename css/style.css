@@ -21,4 +21,101 @@ body {
   font-family: 'Roboto';
   font-weight: 400;
   /* font-style: italic; */
+  max-width: 1392px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 44px;
+  margin-top: 20px;
+}
+.logo a {
+  color: #4754EB;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0 24px;
+  list-style-type: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.nav a {
+  color: #808080;
+}
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.language {
+  margin-top: 10px;
+}
+.language a {
+  color: #808080;
+}
+.language .active {
+  color: #4754EB;
+  font-weight: 700;
+}
+
+  /* особое затруднение вызвало позиционирование текста по вертикали в центре кнопки */
+
+.bottom {
+  background-color: #4754EB;
+  border-radius: 16px;
+  margin-top: 10px;
+  width: 220px;
+  height: 48px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.h1 {
+  position: absolute;
+  padding-left: 56px;
+  padding-top: 120px;
+  font-size: 56px;
+  max-width: 268px;
+  font-weight: 500;
+}
+.form {
+  position: relative;
+  padding-left: 56px;
+  padding-top: 410px;
+}
+  /* особое затруднение вызвало стилизация формы, на курсах мы их не проходили еще */
+.form-box {
+  max-width: 465px;
+  height: 64px;
+  border: 1px solid #595959;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+.text-button {
+  font-size: 12px;
+}
+.text-button a {
+  color: #4754EB;
+}
+ /* особое затруднение вызвало позиционирование фоновой картинки */
+.banner {
+  position: absolute;
+  background-image: url(../images/Saly-1.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-left: 708px;
+  max-width: 628px;
+  height: 720px;
 }
