@@ -16,7 +16,7 @@
   font-weight: 700;
 }
 
-body {
+.body {
   position: relative;
   font-family: 'Roboto';
   font-weight: 400;
@@ -31,7 +31,7 @@ body {
 .logo {
   font-weight: 700;
   font-size: 18px;
-  margin-left: 44px;
+  padding-left: 56px;
   margin-top: 20px;
 }
 .logo a {
@@ -63,59 +63,165 @@ body {
   color: #4754EB;
   font-weight: 700;
 }
-
-  /* особое затруднение вызвало позиционирование текста по вертикали в центре кнопки */
-
 .bottom {
-  background-color: #4754EB;
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   border-radius: 16px;
   margin-top: 10px;
-  width: 220px;
-  height: 48px;
+  /* width: 220px; */
+  padding: 12px 24px;
   text-align: center;
   font-weight: 700;
   color: #FFFFFF;
   cursor: pointer;
 }
+.bottom:hover {
+  border: 1px solid var(--color-blue);
+  background-color: white;
+  color: var(--color-blue);
+}
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: 720px;
+}
+.header-content,
+.header-banner {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.header-banner {
+  position: relative;
+}
+.banner {
+  position: absolute;
+  background-image: url(../images/Saly-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  /* padding-left: 708px; */
+  width: 100%;
+  aspect-ratio: 628/720;
+  /* height: 720px; */
 }
 .h1 {
-  position: absolute;
   padding-left: 56px;
   padding-top: 120px;
   font-size: 56px;
   max-width: 268px;
   font-weight: 500;
 }
-.form {
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  padding-left: 56px;
-  padding-top: 410px;
-}
-  /* особое затруднение вызвало стилизация формы, на курсах мы их не проходили еще */
-.form-box {
-  max-width: 465px;
-  height: 64px;
+  margin-top: 50px;
+  margin-left: 56px;
+  width: 465px;
   border: 1px solid #595959;
   background: rgba(255, 255, 255, 0.5);
+  padding: 20px 16px;
   border-radius: 16px;
+  height: 64px;
+}
+.subscribe input,
+.subscribe button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid white;
+  /*width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  
+  с этим кодом немного не разобрался, с ним как-то хуже внешне выглядит или я что-то не так делаю
+  */
+}
+.subscribe button {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  color: var(--color-blue);
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
 }
 .text-button {
   font-size: 12px;
+  max-width: 354px;
+  margin-top: 16px;
+  margin-left: 64px;
 }
 .text-button a {
   color: #4754EB;
 }
- /* особое затруднение вызвало позиционирование фоновой картинки */
-.banner {
-  position: absolute;
-  background-image: url(../images/Saly-1.png);
+.art-header {
+  padding-left: 56px;
+}
+.art-content {
+  padding-left: 24px;
+}
+/* скролл не виден, так-как он белый на белом фоне */
+.scroll {
+  display: flex;
+  align-items: center;
+  margin-left: 56px;
+  margin-top: 126px;
+  background-color: transparent;
+}
+.pic-scroll {
+  background-image: url(../svg/wheeldown.svg);
   background-repeat: no-repeat;
-  background-position: center right;
-  padding-left: 708px;
-  max-width: 628px;
-  height: 720px;
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 32px;
+}
+.text-scroll {
+  display: block;
+  padding-left: 8px;
+  color: #FFFFFF;
+}
+.art-header {
+  font-size: 24px;
+}
+.art-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.head-section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.smile-section {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+}
+.one {
+  background-image: url(../svg/emoji-01.svg);
+}
+.two {
+  background-image: url(../svg/emoji-02.svg);
+}
+.three {
+  background-image: url(../svg/emoji-03.svg);
+}
+.header-section {
+  margin-left: 12px;
+  font-size: 20px;
+}
+.text-section {
+  max-width: 389px;
+  font-size: 18px;
+  color: #808080;
 }
