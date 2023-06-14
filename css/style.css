@@ -280,11 +280,31 @@
   width: 100%;
   padding-left: 56px;
   padding-top: 161px;
-  height: 639px;
+  height: 540px;
 }
 .article-second-left,
 .article-second-right {
   width: 50%;
+}
+.banner-second_round__pink {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background-color: #EB478B;
+  left: 0px;
+  bottom: -13px;
+  z-index: -1;
+}
+.banner-second_round__white {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background-color: white;
+  left: 88px;
+  top: -1px;
+  z-index: 0;
 }
 .banner-second {
   position: absolute;
@@ -292,9 +312,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 100%;
-  top: 18px;
-  width: 628px;
-  height: 639px;
+  top: -2px;
+  margin-left: 38px;
+  margin-bottom: 100px;
+  width: 540px;
+  height: 540px;
+  z-index: 1;
 }
-
-
