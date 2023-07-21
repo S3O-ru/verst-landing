@@ -1,0 +1,73 @@
+@media (max-width: 1030px) {
+    /* =========== меню =========== */
+    nav, .language {
+        display: none;
+    }
+
+    /* =========== header  =========== */
+    .h1 {
+        font-size: 48px;
+    }
+    .header-wrap {
+        height: 690px;
+    }
+    /* =========== преимущества  =========== */
+    .art-header {
+        font-size: 20px;
+    }
+    .article-first .art-content {
+        flex-wrap: wrap;
+    }
+    .article-first .art-content:last-child {
+        justify-content: center;
+    }
+    /* =========== преимущества  =========== */
+
+    .article-three {
+        padding-top: 0;
+    }
+    .article-three .art-content {
+        display: grid;
+        grid-template-columns: repeat(2, 50%)
+    }
+     /* =========== отзывы  =========== */
+    .article-feedback .art-content {
+        margin-top: 90px;
+    }
+    .feedback:nth-child(2) .feedback-shift {
+        transform: translate(0, 0);
+      }
+      .feedback:nth-child(3) .feedback-shift {
+        transform: translate(0, 0);
+      }
+      .feedback:nth-child(4) .feedback-shift {
+        transform: translate(0, 0);
+      }
+      .btn-box {
+        display: none;
+      }
+     /* =========== sale  =========== */
+     .article-sale .art-body {
+        padding: 70px 0;
+    }
+     .sale-get_box .text-button {
+       padding-bottom: 70px; 
+    }
+    .sale-get_desc {
+        font-size: 30px;
+    }
+     /* ===========faq  =========== */
+
+     .faq-title h2 {
+        font-size: 25px;
+    }
+    .faq-head h3 {
+        font-size: 20px;
+    }
+ /* =========== feedback =========== */
+    .feedback-title {
+       font-size: 20px;
+}
+
+
+    } 
